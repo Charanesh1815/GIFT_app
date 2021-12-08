@@ -6,7 +6,6 @@ import base64
 import wave
 import os
 # imported the requests library
-import requests
 
 # def download_file_from_google_drive(id, destination):
 #     URL = "https://docs.google.com/uc?export=download"
