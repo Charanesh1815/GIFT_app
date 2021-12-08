@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Encryption</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Gift Cipher</h2>
+      <h3>Audio Encryption</h3>
+      <form>
+        <div class="user-box">
+		  	<input type="file" id="audio_" accept="audio/*"name="audio_">
+          	<label>Upload Audio File which you want to encrypt</label>
+        </div>
+
+        <div class="user-box">
+          <input type="text" name="secret_key" autocomplete="off" id="secret_key" required />
+          <label>Secret Key</label>
+        </div>
+
+        <a href="#" onclick="submitData('/submitJSON1_');">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Encrypt the Audio
+        </a>
+        
+      </form>
+    </div>
+
+    <div id="output_div" class="login-box">
+      <h2>Encrypted File</h2>
+      <a href="/get_file" target="blank">
+        Download
+      </a>
+    </div>
+    <div id="output_div1" class="login-box">
+      <h2>Parameters File</h2>
+      <a href="/get_par_file" target="blank">
+        Download
+      </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/static/utility.js"></script>
+</html>

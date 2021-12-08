@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment</title>
+	<script src="/static/utility.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/style.css" >
+  </head>
+  <body>
+	<div class="cotn_principal">
+		<div class="cont_centrar">
+		
+		  <div class="cont_login">
+		<div class="cont_info_log_sign_up">
+			  <div class="col_md_login">
+		<div class="cont_ba_opcitiy">
+			<h2>Encrypt using Gift Cipher</h2>  
+		  <p>Give a audio file to get it's encrypted text and their parameters</p> 
+		  <a href="/problem1"><button type="submit" class="btn_login" >ENCRYPT</button></a>
+		  </div>
+		  </div>
+		<div class="col_md_sign_up">
+		<div class="cont_ba_opcitiy">
+			<h2>Decrypt using Gift Cipher</h2>
+			<p>Give a encrypted text and parameters to get the original audio file.</p>
+			<a href="/problem2"><button type="submit" class="btn_sign_up" >DECRYPT</button></a>
+		</div>
+			</div>
+		</div>
+			
+				
+				<div class="cont_back_info">
+				<div class="cont_img_back_grey">
+				<img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+				</div>
+				
+			</div>
+		<div class="cont_forms" >
+			<div class="cont_img_back_">
+			   <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+			   </div>
+		 <div class="cont_form_login">
+		   <h2>Encrypt</h2>
+		   <input type="file" accept="audio/*" capture id="recorder" name="audio_">
+		   <audio id="player" controls></audio>
+		<input type="password" placeholder="secret key" name="secret_key"/>
+		<button type="submit" class="btn_login" onclick="submitData('/submitJSON1')" value="Submit">ENCRYPT</button>
+		  </div>
+		<div class="row">
+			<div class="col-md-8" align="left" style="float:left;" id="output_div"></div>
+		</div>
+		  
+		   <div class="cont_form_sign_up">
+			 <h2>Decrypt</h2>
+		<input type="text" placeholder="Encryted text" />
+		<input type="password" placeholder="secret key" />
+		<button class="btn_sign_up" onclick="cambiar_sign_up()">DECRYPT</button>
+		
+		  </div>
+		
+			</div>
+			
+		  </div>
+		 </div>
+		</div>
+</body>
+</html>
